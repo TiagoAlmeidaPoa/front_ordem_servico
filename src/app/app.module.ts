@@ -24,12 +24,13 @@ import { FooterComponent } from './views/components/template/footer/footer.compo
 import { NavComponent } from './views/components/template/nav/nav.component';
 import { HomeComponent } from './views/components/home/home.component';
 import { TecnicoReadComponent } from './views/components/tecnico/tecnico-read/tecnico-read.component';
+import { TecnicoCreateComponent } from './views/components/tecnico/tecnico-create/tecnico-create.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
     HeaderComponent, 
-    FooterComponent, NavComponent, HomeComponent, TecnicoReadComponent
+    FooterComponent, NavComponent, HomeComponent, TecnicoReadComponent, TecnicoCreateComponent
   ],
   imports: [
     BrowserModule,
