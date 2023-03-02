@@ -14,7 +14,7 @@ export class TecnicoReadComponent implements AfterViewInit {
 
   tecnicos: Tecnico[] = [];
 
-  displayedColumns: string[] = ['id', 'nome', 'cpf', 'telefone'];
+  displayedColumns: string[] = ['id', 'nome', 'cpf', 'telefone', 'action'];
   dataSource = new MatTableDataSource<Tecnico>(this.tecnicos);
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
