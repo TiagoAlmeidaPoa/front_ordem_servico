@@ -14,7 +14,7 @@
 
       <mat-form-field class="full-width">
         <mat-label>Telefone</mat-label>
-        <input [(ngModel)]="tecnico.telefone" [formControl]="telefone" required name="telefone" maxlength="11" matInput placeholder="(00) 90000-0000">
+        <input [(ngModel)]="tecnico.telefone" [formControl]="telefone" required name="telefone" maxlength="15" matInput placeholder="(00) 90000-0000">
         <mat-error *ngIf="telefone.invalid">{{ errorValidTelefone() }}</mat-error>
       </mat-form-field>
 
