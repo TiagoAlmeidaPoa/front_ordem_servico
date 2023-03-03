@@ -28,3 +28,8 @@ table {
 #edit {
     color: rgb(62, 62, 223);
 }
+
+#delete {
+    color: rgb(210, 75, 79);
+    padding-left: 2rem;
+}
