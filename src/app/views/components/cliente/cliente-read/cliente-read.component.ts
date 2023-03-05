@@ -36,7 +36,7 @@ export class ClienteReadComponent implements AfterViewInit {
   }
 
   navigateToCreate():void {
-    this.router.navigate(['Clientes/create'])
+    this.router.navigate(['clientes/create'])
   }
 
 }
