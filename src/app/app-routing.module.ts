@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ClienteCreateComponent } from './views/components/cliente/cliente-create/cliente-create.component';
 import { ClienteReadComponent } from './views/components/cliente/cliente-read/cliente-read.component';
+import { ClienteUpdateComponent } from './views/components/cliente/cliente-update/cliente-update.component';
 import { HomeComponent } from './views/components/home/home.component';
 import { TecnicoCreateComponent } from './views/components/tecnico/tecnico-create/tecnico-create.component';
 import { TecnicoDeleteComponent } from './views/components/tecnico/tecnico-delete/tecnico-delete.component';
@@ -30,6 +31,9 @@ const routes: Routes = [
   },{
     path: 'clientes/create',
     component: ClienteCreateComponent
+  },{
+    path: 'clientes/update/:id',
+    component: ClienteUpdateComponent
   }
 ];
 

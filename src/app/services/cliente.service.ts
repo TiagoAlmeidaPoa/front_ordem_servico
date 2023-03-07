@@ -26,6 +26,11 @@ export class ClienteService {
     return this.http.get<Cliente>(url);
   }
 
+  update(cliente: Cliente):Observable<Cliente> {
+    const url = `${this.baseUrl}/clientes/${cliente.id}`;
+    return this.http.put<Cliente>(url, cliente);
+  }
+
   create(tecnico: Cliente):Observable<Cliente> {
     const url = this.baseUrl + "/clientes";
     return this.http.post<Cliente>(url, tecnico);
