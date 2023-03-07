@@ -31,6 +31,11 @@ export class ClienteService {
     return this.http.put<Cliente>(url, cliente);
   }
 
+  delete(id: any):Observable<void> {
+    const url = `${this.baseUrl}/clientes/${id}`;
+    return this.http.delete<void>(url);
+  }
+
   create(tecnico: Cliente):Observable<Cliente> {
     const url = this.baseUrl + "/clientes";
     return this.http.post<Cliente>(url, tecnico);
