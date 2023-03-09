@@ -18,27 +18,27 @@ export class OsService {
     ) { }
 
   findAll():Observable<OS[]> {
-    const url = this.baseUrl + "/os";
+    const url = this.baseUrl + "/ordemservicos";
     return this.http.get<OS[]>(url);
   }
 
   findById(id : any):Observable<OS> {
-    const url = `${this.baseUrl}/os/${id}`
+    const url = `${this.baseUrl}/ordemservicos/${id}`
     return this.http.get<OS>(url);
   }
 
   create(os: OS):Observable<OS> {
-    const url = this.baseUrl + "/os";
+    const url = this.baseUrl + "/ordemservicos";
     return this.http.post<OS>(url, os);
   }
 
   update(os: OS):Observable<OS> {
-    const url = `${this.baseUrl}/os/${os.id}`;
+    const url = `${this.baseUrl}/ordemservicos/${os.id}`;
     return this.http.put<OS>(url, os);
   }
 
   delete(id: any):Observable<void> {
-    const url = `${this.baseUrl}/os/${id}`;
+    const url = `${this.baseUrl}/ordemservicos/${id}`;
     return this.http.delete<void>(url);
   }
 
