@@ -43,7 +43,7 @@ export class OsReadComponent implements AfterViewInit {
   }
 
   navigateToCreate():void {
-    this.router.navigate(['ordemservicos/create'])
+    this.router.navigate(['os/create'])
   }
 
   listarTecnico():void {
