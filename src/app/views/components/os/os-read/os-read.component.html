@@ -32,7 +32,7 @@
 
         <ng-container matColumnDef="prioridade">
             <th mat-header-cell *matHeaderCellDef> Prioridade </th>
-            <td mat-cell *matCellDef="let element"> {{element.prioridade}} </td>
+            <td mat-cell *matCellDef="let element" class="{{ prioridade(element.prioridade) }}"> {{element.prioridade}} </td>
           </ng-container>
 
           <ng-container matColumnDef="status">

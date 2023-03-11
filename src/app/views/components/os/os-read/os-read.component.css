@@ -33,3 +33,15 @@ table {
     color: rgb(210, 75, 79);
     padding-left: 2rem;
 }
+
+td.baixa {
+    color: rgb(114, 224, 114);
+}
+
+td.media {
+    color: rgb(216, 216, 94);
+}
+
+td.alta {
+    color: rgb(210, 75, 79);
+}

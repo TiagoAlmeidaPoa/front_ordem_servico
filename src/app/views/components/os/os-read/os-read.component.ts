@@ -62,4 +62,14 @@ export class OsReadComponent implements AfterViewInit {
     })
   }
 
+  prioridade(prioridade : any) {
+    if(prioridade == "BAIXA") {
+      return 'baixa'
+    } else if(prioridade == 'MEDIA') {
+      return 'media'
+    } else {
+      return 'alta'
+    }
+  }
+
 }
