@@ -4,21 +4,21 @@
 
         <mat-form-field appearance="fill">
             <mat-label>Selecione um tecnico</mat-label>
-            <mat-select [(value)]="selected">
-              <mat-option *ngFor="let tec of tecnicos" value="tec.id">{{ tec.nome }}</mat-option>
+            <mat-select [(value)]="os.tecnico">
+              <mat-option *ngFor="let tec of tecnicos" value="{{ tec.id }}">{{ tec.nome }}</mat-option>
             </mat-select>
           </mat-form-field>
 
           <mat-form-field appearance="fill">
             <mat-label>Selecione um cliente</mat-label>
-            <mat-select [(value)]="selected">
-              <mat-option *ngFor="let cli of clientes" value="cli.id">{{ cli.nome }}</mat-option>
+            <mat-select [(value)]="os.cliente">
+              <mat-option *ngFor="let cli of clientes" value="{{ cli.id }}">{{ cli.nome }}</mat-option>
             </mat-select>
           </mat-form-field>
 
           <mat-form-field appearance="fill">
             <mat-label>Selecione um status</mat-label>
-            <mat-select [(value)]="selected">
+            <mat-select [(value)]="os.status">
               <mat-option value="0">ABERTO</mat-option>
               <mat-option value="1">EM ANDAMENTO</mat-option>
               <mat-option value="2">ENCERRADO</mat-option>
@@ -27,7 +27,7 @@
 
           <mat-form-field appearance="fill">
             <mat-label>Selecione uma prioridade</mat-label>
-            <mat-select [(value)]="selected">
+            <mat-select [(value)]="os.prioridade">
               <mat-option value="0">BAIXA</mat-option>
               <mat-option value="1">MEDIA</mat-option>
               <mat-option value="2">ALTA</mat-option>
@@ -40,12 +40,12 @@
         
         <mat-form-field class="full-width">
           <mat-label>Adicione as observações da ordem de serviço</mat-label>
-          <textarea matInput maxlength="255"></textarea>
+          <textarea [(ngModel)]="os.observacoes" name="observacoes" matInput maxlength="255"></textarea>
         </mat-form-field>
 
       </form>
 
-    <button class="mat-elevation-z8" mat-stroked-button color="primary">CRIAR</button>
+    <button (click)="create()" class="mat-elevation-z8" mat-stroked-button color="primary">CRIAR</button>
     <button class="mat-elevation-z8" mat-stroked-button color="warn">CANCELAR</button>
       
 

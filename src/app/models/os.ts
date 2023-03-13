@@ -3,7 +3,7 @@ export interface OS {
     dataAbertura?: any;
     dataFechamento?: any;
     prioridade: any;
-    obervacoes: String;
+    observacoes: String;
     status: any;
     tecnico: any;
     cliente: any;
