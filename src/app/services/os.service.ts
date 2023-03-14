@@ -33,7 +33,7 @@ export class OsService {
   }
 
   update(os: OS):Observable<OS> {
-    const url = `${this.baseUrl}/ordemservicos/${os.id}`;
+    const url = `${this.baseUrl}/ordemservicos`;
     return this.http.put<OS>(url, os);
   }
 
