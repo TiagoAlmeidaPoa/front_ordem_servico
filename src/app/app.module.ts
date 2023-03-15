@@ -34,12 +34,13 @@ import { ClienteDeleteComponent } from './views/components/cliente/cliente-delet
 import { OsReadComponent } from './views/components/os/os-read/os-read.component';
 import { OsCreateComponent } from './views/components/os/os-create/os-create.component';
 import { OsUpdateComponent } from './views/components/os/os-update/os-update.component';
+import { OsViewsComponent } from './views/components/os/os-views/os-views.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
     HeaderComponent, 
-    FooterComponent, NavComponent, HomeComponent, TecnicoReadComponent, TecnicoCreateComponent, TecnicoUpdateComponent, TecnicoDeleteComponent, ClienteReadComponent, ClienteCreateComponent, ClienteUpdateComponent, ClienteDeleteComponent, OsReadComponent, OsCreateComponent, OsUpdateComponent
+    FooterComponent, NavComponent, HomeComponent, TecnicoReadComponent, TecnicoCreateComponent, TecnicoUpdateComponent, TecnicoDeleteComponent, ClienteReadComponent, ClienteCreateComponent, ClienteUpdateComponent, ClienteDeleteComponent, OsReadComponent, OsCreateComponent, OsUpdateComponent, OsViewsComponent
   ],
   imports: [
     BrowserModule,
