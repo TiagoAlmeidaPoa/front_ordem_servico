@@ -1,5 +1,5 @@
 <div class="create">
-    <h1>Ordens de Serviço Abertas</h1>
+    <h1>Ordens de Serviço Encerradas</h1>
     <button (click)="navigateToCreate()" mat-raised-button color="primary" class="mat-elevation-z8">CRIAR NOVA ORDEM DE SERVIÇO</button>
   </div>
   
@@ -43,10 +43,10 @@
         <ng-container matColumnDef="action">
           <th mat-header-cell *matHeaderCellDef> AÇÕES </th>
           <td mat-cell *matCellDef="let element">
-            <a routerLink="update/{{ element.id }}">
+            <a routerLink="../update/{{ element.id }}">
               <i id="edit" class="material-icons">edit</i>
             </a>
-            <a routerLink="view/{{ element.id }}">
+            <a routerLink="../view/{{ element.id }}">
               <i id="delete" class="material-icons">visibility</i>
             </a>
           </td>

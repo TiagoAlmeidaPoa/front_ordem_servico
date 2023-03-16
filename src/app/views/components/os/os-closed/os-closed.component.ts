@@ -8,11 +8,11 @@ import { OsService } from 'src/app/services/os.service';
 import { TecnicoService } from 'src/app/services/tecnico.service';
 
 @Component({
-  selector: 'app-os-read',
-  templateUrl: './os-read.component.html',
-  styleUrls: ['./os-read.component.css']
+  selector: 'app-os-closed',
+  templateUrl: './os-closed.component.html',
+  styleUrls: ['./os-closed.component.css']
 })
-export class OsReadComponent implements AfterViewInit {
+export class OsClosedComponent implements AfterViewInit {
 
   ordensServico: OS[] = [];
 
@@ -35,7 +35,7 @@ export class OsReadComponent implements AfterViewInit {
   findAll():void {
     this.service.findAll().subscribe((resposta) => {
       resposta.forEach(x => {
-        if(x.status != 'ENCERRADO') {
+        if(x.status == 'ENCERRADO') {
           this.ordensServico.push(x)
         }
       })

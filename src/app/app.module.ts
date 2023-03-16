@@ -35,12 +35,14 @@ import { OsReadComponent } from './views/components/os/os-read/os-read.component
 import { OsCreateComponent } from './views/components/os/os-create/os-create.component';
 import { OsUpdateComponent } from './views/components/os/os-update/os-update.component';
 import { OsViewsComponent } from './views/components/os/os-views/os-views.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { OsClosedComponent } from './views/components/os/os-closed/os-closed.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
     HeaderComponent, 
-    FooterComponent, NavComponent, HomeComponent, TecnicoReadComponent, TecnicoCreateComponent, TecnicoUpdateComponent, TecnicoDeleteComponent, ClienteReadComponent, ClienteCreateComponent, ClienteUpdateComponent, ClienteDeleteComponent, OsReadComponent, OsCreateComponent, OsUpdateComponent, OsViewsComponent
+    FooterComponent, NavComponent, HomeComponent, TecnicoReadComponent, TecnicoCreateComponent, TecnicoUpdateComponent, TecnicoDeleteComponent, ClienteReadComponent, ClienteCreateComponent, ClienteUpdateComponent, ClienteDeleteComponent, OsReadComponent, OsCreateComponent, OsUpdateComponent, OsViewsComponent, OsClosedComponent
   ],
   imports: [
     BrowserModule,
@@ -66,6 +68,7 @@ import { OsViewsComponent } from './views/components/os/os-views/os-views.compon
     MatDatepickerModule,
     MatPaginatorModule,
     MatSnackBarModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent],
